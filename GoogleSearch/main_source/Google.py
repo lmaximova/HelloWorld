@@ -8,7 +8,6 @@ class Google():
         self.driver.get("http://google.com")
         self.driver.implicitly_wait(5)
 
-
     def goToSearchPage(self):
         self.driver.find_element_by_name('q').send_keys("Selenium Testing Tools\n")
         self.driver.implicitly_wait(5)
