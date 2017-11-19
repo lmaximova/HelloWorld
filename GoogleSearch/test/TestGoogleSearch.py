@@ -6,8 +6,7 @@ from selenium import webdriver
 class MyTestCaseTest(unittest.TestCase):
 
     def setUp(self):
-        #self.driver = webdriver.Chrome("C:\\Selenium\\Chrome\\chromedriver_win32\chromedriver.exe")
-        self.googlePage = Google(webdriver.Chrome("C:\\Selenium\\Chrome\\chromedriver_win32\chromedriver.exe"))
+        self.googlePage = Google(webdriver.Chrome())
 
 
     def tearDown(self):
