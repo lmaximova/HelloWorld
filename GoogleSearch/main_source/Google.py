@@ -14,5 +14,8 @@ class Google():
         numRest = self.driver.find_element_by_id('resultStats').text
         return numRest
 
+    def getTite(self):
+        return self.driver.title
+
     def close(self):
         self.driver.close()

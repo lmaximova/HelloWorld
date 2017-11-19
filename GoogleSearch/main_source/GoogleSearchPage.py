@@ -8,3 +8,6 @@ class GoogleSearchPage():
     def getNumberofResults(self):
         numberofResults = self.driver.find_element_by_id('resultsStats').wrapped_element.text
         return numberofResults
+
+    def getTitle(self):
+        return self.driver.title

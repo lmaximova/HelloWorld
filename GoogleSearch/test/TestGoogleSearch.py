@@ -16,7 +16,9 @@ class MyTestCaseTest(unittest.TestCase):
         googleSearch = self.googlePage.goToSearchPage()
         assert googleSearch != '0'
 
-
+    def test_googleTitle(self):
+        title = self.googlePage.getTite()
+        assert title == 'Google', 'Wrong page title'
 
 
 if __name__ == '__main__':
