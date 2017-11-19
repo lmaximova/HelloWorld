@@ -1,9 +1,7 @@
 import unittest
 
-from selenium import webdriver
-
 from GoogleSearch.main_source.Google import Google
-
+from selenium import webdriver
 
 class MyTestCaseTest(unittest.TestCase):
 
